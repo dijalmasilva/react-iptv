@@ -1,0 +1,32 @@
+.list-groups {
+  text-align: center;
+
+  .group {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: 5px;
+    background-color: aquamarine;
+    height: 300px;
+
+    &:hover {
+      box-shadow: 0 0 -2px 20px #000;
+    }
+  }
+}
+
+.go-back {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: aqua;
+  border: none;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  cursor: pointer;
+  outline: none;
+}
