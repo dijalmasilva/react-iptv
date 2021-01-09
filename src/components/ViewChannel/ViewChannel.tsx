@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactPlayer from "react-player";
 import {Channel} from "../../App";
 
 interface ViewChannelProps {
@@ -17,11 +18,7 @@ function ViewChannel ({ channel, onBack } : ViewChannelProps): JSX.Element {
             <button className="go-back" onClick={onBack}> Voltar </button>
             <h1>{channel.inf.title}</h1>
             <h2>{channel.inf.groupTitle}</h2><br/>
-            <video width="100%" height="400" controls autoPlay>
-                <source src={channel.url} type="video/mp4" />
-                <source src={channel.url} type="video/ogg" />
-                <source src={channel.url} type="video/mp2t" />
-            </video>
+            <ReactPlayer controls height={300} width={'100%'} url={channel.url}/>
         </div>
     )
 }
