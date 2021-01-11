@@ -93,7 +93,7 @@ function App() {
         <ListChannels channels={channels} groupName={pageInfo.group} onSelect={onChoiceChannel} onBack={onBackToGroups}/>
       }
       {
-        pageInfo.page === Pages.CHANNEL &&
+        pageInfo.page === Pages.CHANNEL && pageInfo.channel &&
         <ViewChannel channel={pageInfo.channel} onBack={onBackToChannelsOfGroup}/>
       }
     </div>
